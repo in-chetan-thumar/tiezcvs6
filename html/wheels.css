@@ -1,0 +1,958 @@
+/*Global Part*/ 
+body, p, ul, li, h1, h2, h3, h4, h5, h6, input, legend, form, select, label{margin:0;	padding:0;}
+body{background-color:#fff; color: #666666; font-family:Verdana, Geneva, sans-serif; font-size:12px;}
+	
+@font-face{font-family: 'WebRupee';src: local('WebRupee'), url('WebRupee.V2.0.ttf') format('truetype');font-weight: normal;font-style: normal;}
+.currency{font-family: 'WebRupee'; font-size:14px;}
+.currency_greyBold{font-family: 'WebRupee'; font-size:16px;}
+.currency_white{font-family: 'WebRupee'; font-size:12px;}
+.currency_redB{font-family: 'WebRupee'; font-size:15px;}
+.currency_step1{font-family: 'WebRupee'; color:#444444; font-size:12px; font-weight:normal;}
+
+img{ border:none;}
+
+/*no outline for links*/
+	a,a:visited,a:hover,a:active{outline: none;}
+	
+	ul{list-style-type:none;}
+
+	.clear{ clear:both;}
+	
+.main{margin:0; width:100%;}
+
+	.mainWrapper{  margin:0 auto; height:auto; margin-bottom:36px; width:1000px;}
+
+		.datawrapper{ background-image: url("images/mainShadowBg.png"); background-repeat: repeat-y; height:auto; min-height:695px; width:1000px;}
+
+		.layoutWrap{height: auto; min-height:700px; margin:0px 9px 0px 9px; width:982px;}
+		
+		/*header css START here*/
+			.header{height:157px; width:982px;}
+			
+				/*login css START here*/
+				.logindiv{height:28px; width:998px;}				
+					.loginCurveBg{background-image: url("images/loginBg.png"); background-repeat: no-repeat; float:right; height:28px; width:395px;}
+						.logintextDiv{float:right; padding-right:13px; padding-top:6px; color:#ffffff; font-family: Arial; font-size:11px; font-weight:bold; text-decoration:none;}
+							.logintextwhite:link, .logintextwhite:visited,
+							.logintextwhite:hover{color:#ffffff; font-family: Arial; font-size:11px; font-weight:bold; text-decoration:none;} /*text link*/
+					
+				/*logo and addbanner css START here*/
+				.logo_adBannerDiv{ height:114px; width:982px;}
+					.logo{ float:left; width:226px; height:114px;}
+						.adBannerDiv{ float:left; margin-left:29px; width:727px; height:114px;}
+						
+				/*Menu css START here*/
+				.menuWrapper{background-image: url("images/menuBg.png"); background-repeat: no-repeat; margin-top:22px; height:24px; width:982px;}
+					.menu {float:left; height:24px; margin-left:9px; width:895px;}
+						#holder{float:left; height:24px;width:895px;}
+							#holder li {float: left; list-style: none outside none;}
+								#holder li a{text-decoration:none;}
+									#holder li a span {display: block; height:24px; color:#fff; font-family: Arial; font-size:11px; font-weight:bold; text-decoration:none; padding: 5px 1px 0 4px; text-align:center; text-decoration:none; line-height:12px;}   
+
+						.rightIconDiv{float: left; height: 19px; margin-left: 18px; padding-top: 4px; width: 54px;}
+							.facebook,.twitter,.rss{float:left; height:16px; width:19px;}
+								.rss{width:16px;}
+		/*header css END here*/
+		
+		/*midData_wrap css START here*/
+		
+			.midData_wrap{ height:auto; min-height:800px; overflow:hidden; margin-top:18px; padding-bottom:28px; width:982px;}
+			
+.leftCol{height:auto; float:left; min-height:800px; width:120px;}
+
+.leftlinkBox{background-color:#ffffff; height:auto; float:left; min-height:145px; margin-bottom: 14px; width:120px;}
+
+.linkTitle_left {background-image: url("images/leftlinktitle_black_bg.png"); background-repeat: no-repeat;
+ color: #F6F6F6; font-family: Arial; font-size: 14px; font-weight: bold; height: 24px; line-height: 21px;
+    padding-left: 7px; text-decoration: none; width: 120px;}
+	
+	
+	#leftmenu{ float:left; padding-top:9px; padding-left:7px; padding-bottom: 6px;}
+	
+	#leftmenu li{ list-style-type:none; color:#646464;}
+	
+.leftCol .leftlinkBox #leftmenu li a,a:link,a:visited,a:hover{text-decoration:none;color: #646464; font-family: Arial; font-size: 11px; font-weight: bold; text-decoration:none; line-height: 17px;}	
+	
+	
+	
+
+.middleCol{ height:auto; float:left; min-height:200px; margin-left:9px; margin-right:9px; width:539px;}
+
+
+	.midDataHolder{/* background-color:#CC6633;*/ float:left; height:auto; width:539px;}
+	
+	
+	
+	
+	.breadcrumbwrap {color: #464646; font-family: Arial; font-size: 10px; font-weight:bold; height:22px; line-height:15px;}
+	
+	
+	.breadcrumbgrey:link, .breadcrumbgrey:visited, .breadcrumbgrey:hover {color: #464646; font-family:Arial; font-size: 10px; font-weight:bold; line-height:15px; text-decoration: none;}
+	
+	.titleTab_Middle{background-image: url("images/Mid_title_BG.png"); background-repeat:repeat-x; height: 24px; padding-left: 10px;}
+	
+	.title_text_red{color: #ff0000; font-family: Arial; font-size: 14px; font-weight: bold; line-height: 23px; text-decoration: none;}
+
+	.title_text_white{color: #ffffff; font-family: Arial; font-size: 14px; font-weight: bold; line-height: 23px; text-decoration: none;}
+	
+
+		
+	.contentHolderDiv{ background-color:#FFFFFF; height:auto; min-height:150px;  padding:0px 7px 0px 8px; width:524px;}
+
+.contentHolderDiv h2 {color: #272727; font-family: Arial; font-size: 12px; font-weight: bold; padding-bottom:15px; padding-top:17px;}
+
+.contentHolderDiv p { color: #6d6d6d; font-family: Arial; font-size: 12px; font-weight: normal; line-height: 20px; margin-bottom: 13px;}
+
+.contentHolderDiv h3 {color: #ff0000; font-family: Arial; font-size: 12px; font-weight: bold; padding-bottom:15px;}
+
+.latestCar_info{height: auto; min-height:280px; width:524px;}
+
+.greyBgBox{ background-color:#ebebeb; height: auto; min-height: 130px; overflow:hidden;}
+
+.greyBgBox_Bottom{background-image: url("images/greyBottomBg.png"); background-repeat: no-repeat; height:11px;}
+
+.leftDiv{ float:left; height:auto; padding-left:6px; padding-top:6px; width:277px;}
+
+.rightDiv{float:left; height:auto; padding-left:6px; width:235px;}
+
+
+.leftAdimgDiv {float: left; height:270px; width: 277px;}
+
+
+.redtext {
+    color: #ff0003;
+    font-family: Arial;
+    font-size: 12px;
+    font-weight: bold;
+    line-height: 16px;
+    text-decoration: none;
+}
+
+.smallgreytext {
+    color: #343434;
+    font-family: Arial;
+    font-size: 12px;
+    font-weight: normal;
+    text-decoration: none;
+}
+
+.latestCar_info .greyBgBox .leftDiv .leftAdimgDiv label{float: left; padding-left:6px; width: 100%;}
+
+
+
+.thumbInfoDiv, .thumbInfoDiv_last {background:url(images/thumbBottomBorder.png) no-repeat left bottom; border-bottom: 1px solid #DDDDDD; 
+float: left; height: 67px; padding-top:6px; width: 235px;}
+
+.thumbInfoDiv_last{ background:none;}
+
+.thumb_textDiv {
+    float: left;
+    width: 138px;
+}
+
+.thumbimgDiv {
+    float: left;
+    height: 67px;
+    width: 97px;
+}
+
+.thumbInfoDiv .thumb_textDiv h2{color: #ff0003; font-family: Arial; font-size: 12px; font-weight: bold; padding:0px;}
+
+.thumbInfoDiv_last .thumb_textDiv h2{color: #ff0003; font-family: Arial; font-size: 12px; font-weight: bold; padding:0px;}
+
+
+.threeStepBox{ float:left; padding:0px 40px 20px 33px; width:451px;}
+
+.threeStepBox table tr td{color: #ff0000; font-family: Arial; font-size: 12px; font-weight: bold; text-decoration:none;}
+
+
+.infoDataDiv {height: auto; margin-bottom: 6px; min-height: 146px; overflow: hidden; width: 524px;}
+
+.infoDataDiv .greyBgBox div{ float:left;}
+
+.infoDataDiv .greyBgBox div h1 { color: #ff0003; font-family: Arial; font-size: 12px; font-weight: bold; margin-bottom:6px; padding-top: 9px;}
+
+
+.greyText_info{color: #343434; font-family: Arial; font-size: 12px; font-weight: normal; text-decoration:none; line-height:17px;}
+
+.greyTextItalic{color: #343434; font-family: Arial; font-size: 12px; font-weight: normal; font-style:italic; line-height:17px; text-decoration:none;}
+
+.clickdiv_small:link, .clickdiv_small:visited, .clickdiv_small:hover {
+    color: #444444;
+    cursor: pointer;
+    display: block;
+    float: left;
+    font-family: Arial;
+    font-size: 13px;
+    height: auto;
+    min-height: 17px;
+    padding-top: 0;
+    text-align: left;
+    text-decoration: none;}
+
+
+/*News Info Box*/
+
+.newsInfoBox{ float:left; height:auto; min-height:420px; padding:0 7px 0 8px; width:524px;}
+
+
+.newsTabMenu{background:url(images/blackTitleBG.png) repeat-x;  height:24px; }
+
+ 
+ 
+
+#newsmenu_holder{float:left; height:24px; width:524px;}
+#newsmenu_holder li {cursor:pointer; cursor:hand; float: left; list-style: none outside none; background:url(images/dividerimg.jpg) no-repeat right top; height:24px;}
+#newsmenu_holder li.last {background-image:none;}
+
+#newsmenu_holder li a{text-decoration:none;}
+#newsmenu_holder li a span {display: block; height:24px; color:#fff; font-family: Arial; font-size:11px; font-weight:bold; text-decoration:none; padding: 5px 1px 0 4px; text-align:center; text-decoration:none; line-height:12px;}   
+
+
+#newsmenu_holder li.active {background-color:#FFFFFF; background-image:none; cursor:pointer; cursor:hand; float: left; list-style: none outside none;  height:24px;}
+#newsmenu_holder li.active a{text-decoration:none;}
+#newsmenu_holder li.active a span {display: block; height:24px; color:#000; font-family: Arial; font-size:11px; font-weight:bold; text-decoration:none; padding: 5px 1px 0 4px; text-align:center; text-decoration:none; line-height:12px;}   
+
+
+
+.newsDataDiv{ border:solid 1px #d5d5d5; background-color:#ffffff; height:auto; min-height:366px; width:522px;}
+
+.datarow{ border-bottom:solid 1px #d4d4d4; height:auto; min-height:73px; padding-top:4px; width:522px;}
+
+.newsDataDiv .one{ float:left; width:110px;}
+
+.newsDataDiv .two{float:left; padding-top:4px; padding-right:4px; width:336px;}
+
+.newsInfoBox .newsDataDiv .two h4{color: #bd2325; font-family: Arial; font-size: 12px; font-weight: normal;}
+
+.newsInfoBox .newsDataDiv .two label{color: #646464; font-family: Arial; font-size: 12px; font-weight: normal;}
+
+
+.readMore:link, .readMore:visited,.readMore:hover{color: #bd2325; font-family: Arial; font-size: 11px; font-weight: normal;
+text-decoration:none;} /*text link*/
+
+.bluetextSmall{ color:#0067ab; font-family: Arial; font-size: 12px; font-weight: normal; line-height:20px;}
+
+.comment_text{color:#b0b0b0; font-family: Arial; font-size: 12px; font-weight: normal; line-height:18px;}
+
+
+.newsDataDiv .three{float:left; padding-top:4px; width:72px;}
+
+/*rightCol css START here*/
+
+.rightCol{height:auto; float:left; min-height:800px; width:305px;}
+
+	.rightDataBox{height:auto; margin-bottom: 6px; min-height: 157px; overflow:hidden; width: 305px;}
+
+/*advanceSearch_block CSS START Here*/
+
+	.advanceSearch_block {float: left; height: 145px; margin-bottom: 15px; width: 305px;}
+
+	.NEW {background-image: url("images/newLabel.png"); background-position: left center;
+	 background-repeat: no-repeat; display: inline-block; height: 67px; margin-left: -4px; position: absolute;
+	 width: 59px; z-index: 1;}
+
+		.advanceSearch_block .titleTab {background-image: url("images/right_title_BG.png"); background-repeat:repeat-x; height: 24px; padding-left: 10px;}
+
+		.redbgBox {background-image: url("images/advanceSearchBg.gif"); background-repeat: repeat-x; float: left;
+		height: 125px; width: 305px;}
+
+			.formData {float: left; height: 105px; padding-left: 24px; width: 290px;}
+
+				.formData .left {float: left; margin-right: 5px; width: 129px;}
+
+				.formData .right {float: left; margin-left: 10px; width: 129px;}  
+
+					.formData .left label {float: left;}
+
+					.formData .right label {float: left;}
+
+						.selectbox {background-color: #FFFFFF; border: 1px solid #918385; color: #515151; font-family: Arial;
+						font-size: 12px; font-weight: normal; height: 18px; margin-top: 8px; width: 125px;}
+
+						.whitetext_link:link, .whitetext_link:visited, .whitetext_link:hover{
+							color: #FFFFFF; font-family: Arial; font-size: 12px; font-weight: normal;text-decoration: none;}
+
+							.title_text { color: #f6f6f6; font-family: Arial; font-size: 14px; font-weight: bold; line-height: 23px; text-decoration: none;}
+
+	.advanceSearch_block_long {float: left; height:505px; margin-bottom: 15px; width: 305px;}	
+	
+	.advanceSearch_block_long .titleTab {background-image: url("images/right_title_BG.png"); background-repeat:repeat-x; height: 24px; padding-left: 10px;}
+	
+	.redbgBox_long {background-image: url("images/advanceSearchBg_long.gif"); background-repeat: repeat-x; float: left;
+		height:505px; width: 305px;}
+		
+			.formData_long {float: left; height: auto; min-height:105px; padding-left: 24px; width: 290px;}
+
+				.formData_long .left {float: left; margin-right: 5px; width: 129px;}
+
+				.formData_long .right {float: left; margin-left: 10px; width: 129px;}  
+
+					.formData_long .left label {float: left;}
+
+					.formData_long .right label {float: left;}
+		
+		
+		
+							
+								
+		.selectButton, .selectButton span{
+			cursor:pointer; 
+			cursor:hand;	
+			background: url(images/blackBtn_left.png) no-repeat left top;
+			height:30px; width:112px;  
+			font-family:Arial;
+			font-size:12px;
+			font-weight:bold;
+			color:#f9f9f9;
+			display:block; /*opera*/
+			display:inline-block; /*ie*/
+			display:-moz-inline-box;  /*ff*/
+			text-decoration:none;
+			text-align:center;				
+			
+			}
+		
+		.selectButton span{ 
+			background:url(images/blackBtn_right.png) no-repeat right top;
+			display:block;	
+			display:inline-block;			
+			padding-top:6px;
+			text-align:center;
+			padding-right:12px;	
+			margin-left:0px\0/;
+			margin-left:0px;
+		}
+
+/*advanceSearch_block CSS END Here*/
+
+
+/*2nd_handCar_InfoDiv css START here*/
+
+	.secondhandCar_InfoDiv {float: left; height:auto; min-height: 230px; margin-bottom:0px; width: 305px;}	
+
+		.titleTab {background-image: url("images/right_title_BG.png"); background-repeat:repeat-x; height: 24px; padding-left: 10px;}						
+
+		.carlistHolder { border:solid 1px #cccccc; float: left; height: auto; min-height: 205px; width: 303px;}
+
+			.adBgDiv_list {background: url("images/listBg.gif") repeat-x scroll 0 0 transparent; float: left; height: 68px; padding-left: 3px; width: 299px;}
+
+				.adBgDiv_list div {float: left; padding-top: 5px;}
+
+					.adBgDiv_list div h3 { color: #ff0000; font-family: Arial; font-size: 12px; font-weight: bold; text-decoration: none;}
+
+					.adBgDiv_list div table td {color: #363636; font-family: Arial; font-size: 11px; font-weight: normal;}							
+
+/*2nd_handCar_InfoDiv css END here*/
+
+
+/*Latest News css START here*/
+
+	.newsBoxWrap{ background-color:#ffffff; float: left; height:auto; min-height: 230px; margin-top:5px; margin-bottom:5px; width: 305px;}	
+
+		.newsHolderDiv{ float: left; height: auto; min-height: 205px; padding:0px 8px 0px 8px;}
+		
+		.news_row{ border-bottom:solid 1px #e1e1e1; float: left; height: auto; min-height:20px; width:289px;}
+
+			.adBgDiv_list {background: url("images/listBg.gif") repeat-x scroll 0 0 transparent; float: left; height: 68px; padding-left: 3px; width: 299px;}
+			
+			.redLink:link, .redLink:visited, .redLink:hover{color: #ff0000; font-family: Arial; font-size: 10px; font-weight: normal;
+			text-decoration: none;}
+			
+						.black_more:link, .black_more:visited, .black_more:hover{color: #191919; font-family: Arial; font-size: 10px; font-weight: bold;
+			text-decoration: none; text-align:right;}
+
+			
+			
+/*Latest News css END here*/
+
+
+
+
+/*rightCol css END here*/
+
+
+			
+/*midData_wrap css END here*/
+		
+		/*footerData css START here*/
+		
+		.footerData_wrap{background-image: url("images/footerBg.png"); background-repeat: repeat-y; height:68px; width:1000px;}
+		
+	
+.footerData_wrap .footerlinkDiv {
+    color: #555555;
+    font-family: Arial;
+    font-size: 10px;
+    font-weight: normal;
+    padding-bottom: 6px;
+    padding-top: 6px;
+    text-align: center;
+}
+
+
+.foot_linktext:link,.foot_linktext:visited,.foot_linktext:hover{    color: #555555;
+    font-family: Arial;
+    font-size: 10px;
+    font-weight: normal; text-decoration:none;
+}
+
+.footerData_wrap .infodiv {
+    color: #636363;
+    font-family: Arial;
+    font-size: 9px;
+    font-weight: normal;
+    text-align: center;
+}
+
+/*Home page css END here*/
+
+
+/*login page css START here*/
+
+.loginDataDiv {height: auto; margin-bottom: 6px; min-height: 146px; overflow: hidden; padding-top: 18px; width: 524px;}
+
+.loginDataDiv p{ color: #FF0000; font-family: Arial; font-size: 12px; font-weight: bold; padding-left:8px;}
+
+.loginHolder{ float:left; padding-left:20px; width:470px;} 
+
+.loginDataDiv .loginHolder .left{float:left; width:337px;}
+
+.loginDataDiv .loginHolder .right{ float:left; width:133px;}
+
+.loginDataDiv .loginHolder .left label{float:left; color: #000000; float: left; font-family: Arial; font-size: 12px; font-weight: normal; text-decoration: none; line-height:19px; margin-bottom:10px; width:75px;}
+
+.loginDataDiv .loginHolder .left input{margin-bottom:10px;}
+
+
+.loginDataDiv .loginHolder .left input.check{width:13px; height:13px; margin-bottom:0px;}
+
+
+.forgottext:link, .forgottext:visited, .forgottext:hover {
+    color: #000;
+    font-family: Arial;
+    font-size: 11px;
+    font-weight: normal;
+    text-decoration: none;
+	  line-height: 20px;
+}
+
+
+.forminput {
+    background-color: #FFFFFF;
+    border: 1px solid #B3B3B3;
+    color: #464646;
+    font-family: Verdana;
+    font-size: 11px;
+    font-weight: normal;
+    height: 18px;
+    padding-top: 0;
+    width: 230px;
+}
+
+.loginDataDiv .loginHolder .left label.redBold{float:left; color: #FF0000; float: left; font-family: Arial; font-size: 12px; font-weight: bold; text-decoration: none; line-height:19px; margin-bottom:10px;}
+
+/*login page css END here*/
+
+/*Contact seller page css START here*/
+
+.dataHolderDiv{ height:auto; width:524px;}
+
+.dataHolderDiv p.info{ color:#121212; height:auto; font-family: Arial; font-size: 12px; font-weight: normal;
+ margin-bottom: 10px; padding-top: 10px; text-decoration: none;}
+
+.dataHolderDiv .formdata {display: inline-table; padding-top: 0; padding-bottom: 16px; width:524px;}
+
+.dataHolderDiv .formdata .formCol {float: left; margin-left:16px; width: 505px;}
+
+.formCol1 {
+    color: #2B2E33; float: left;
+    font-family: Arial;
+    font-size: 12px;
+    font-weight: normal;
+    padding-bottom: 7px;
+    text-decoration: none;
+    width:80px;
+}
+
+.formCol2 {
+    float: left;
+    padding-bottom: 7px;
+    width:425px;
+}
+
+.formtextarea {
+    background-color: #FFFFFF;
+    border: 1px solid #B3B3B3;
+    color: #464646;
+    font-family: Verdana;
+    font-size: 12px;
+    font-weight: normal;
+    height: 71px;
+    margin-top: 7px;
+    padding-top: 0;
+    width: 487px;
+}
+
+.securityCodeDiv { padding-left: 16px; padding-top: 8px; padding-bottom:15px;}
+
+.securityCodeDiv label {color: #121212; font-family: Arial;  font-size: 12px;  font-weight: bold;
+   line-height: 17px; text-decoration: none;}
+
+.securityCodeDiv label.normal {
+    color: #121212;
+    font-family: Arial;
+    font-size: 12px;
+    font-weight: normal;
+    line-height: 17px;
+    text-decoration: none;
+}
+
+.captcha {
+    padding-top: 7px;
+}
+
+.indicateDiv{background-image: url("images/indicatorBG.png"); background-repeat: no-repeat; height:75px; margin:12px 0px 12px 0px; .margin:8px 0px 8px 0px; width:267px;}
+
+.indicateDiv table{ padding-left:6px; padding-right:5px; padding-top: 4px;}
+
+
+.tittleRed{ color: #f82b24; font-family: Arial;  font-size: 12px;  font-weight: bold;}
+
+.smallGreydigit {
+    color: #37393b;
+    font-family: Arial;
+    font-size: 11px;
+    font-weight: normal;
+    text-decoration: none;
+}
+
+.searchDIv {
+    height: 26px;
+    margin-bottom: 8px;
+    margin-top: 14px;
+    width: 265px;
+}
+/*Contact seller page css END here*/
+
+
+	.newsBoxWrap_small{ background-color:#ffffff; float: left; height:auto; min-height:106px; margin-top:5px; margin-bottom:5px; width:142px;}	
+
+		.newsHolderDiv_small{ float: left; height: auto; min-height:106px; padding:6px 8px 0px 8px;}
+		
+		.news_row_small{ float: left; height: auto; min-height:20px; width:123px;}
+		
+		.redLink_big:link, .redLink_big:visited, .redLink_big:hover {
+    color: #FF0000;
+    font-family: Arial;
+    font-size: 12px;
+    font-weight: normal;
+    text-decoration: none;
+}
+
+			.adBgDiv_list_small {background: url("images/listBg.gif") repeat-x scroll 0 0 transparent; float: left; height: 68px; padding-left: 3px; width: 299px;}
+
+
+/*step 1 START*/
+
+	.stepMenuTab{background: url("images/stepMenuBg.png") repeat-x scroll 0 0 transparent; height:36px; width:539px;}
+	
+
+
+#stepMenu_Holder{float:left; height:36px; width:539px;}
+
+#stepMenu_Holder li {cursor:pointer; cursor:hand; float: left; list-style: none outside none; background:url(images/trangIcon.png) no-repeat right top; height:36px;}
+#stepMenu_Holder li.last {background-image:none;}
+
+#stepMenu_Holder li a{text-decoration:none;}
+#stepMenu_Holder li a span {display: block; color:#959595; font-family: Arial; font-size:14px; font-weight:bold; text-decoration:none; padding:0px 15px 0 4px; text-align:center; text-decoration:none; line-height:23px;}   
+
+	
+#stepMenu_Holder li.active {cursor:pointer; cursor:hand; float: left; list-style: none outside none;  height:36px;}
+#stepMenu_Holder li.active a{text-decoration:none;}
+#stepMenu_Holder li.active a span {display: block; color:#ff0000; font-family: Arial; font-size:14px; font-weight:bold; text-decoration:none; padding: 0px 15px 0 4px; text-align:center; text-decoration:none; }   
+	
+	
+	
+	
+	.StepPackDetails_Holder {
+    margin-bottom: 0;
+    margin-top:30px;
+    width:524px;
+}
+
+.packDetail_Title { 
+    height: 26px;
+    margin-bottom:9px;
+    width:524px;
+	background-color:#ebebeb;
+}
+
+
+.packDetail_Title div {
+    color: #444444;
+    float: left;
+    font-family: Arial;
+    font-size: 12px;
+    font-weight: bold;
+    text-decoration: none;
+	line-height: 23px;
+}
+
+.packDetail_Info_Holder {
+    height: auto;
+    margin-bottom: 8px;
+    width: 524px;
+}
+
+.packDetail_Info{ height:47px; background-color:#ebebeb;}
+
+.packDetail_Info div {
+    color: #444444;
+    float: left;
+    font-family: Arial;
+    font-size: 12px;
+    font-weight: normal;
+    line-height:49px;
+    text-decoration: none;
+}
+
+.step1_RedBold {
+    color: #ff0006;
+    font-family: Arial;
+    font-size: 12px;
+    font-weight: bold;
+    line-height: 49px;
+    text-decoration: none;
+}
+
+.packDetail_Info div.selectButton_Holder {
+    height:47px;
+    margin-bottom: 0;
+    margin-top: -3px;
+    padding-right: 4px;
+    padding-top: 2px;
+    text-align: right;
+    width:72px;
+}
+
+.selectButton_Step1 {
+    background: url("images/selectBG_Step1.png") no-repeat scroll left top transparent;
+    display: inline-block;
+    text-align: center;
+	width:72px;
+	height:47px;
+}
+
+.selectButton_Step1 span{color: #fff;
+    font-family: Arial;
+    font-size: 12px;
+    font-weight: bold;
+    line-height: 50px;
+    text-decoration: none;
+}
+
+#stepMenu_Holder li a span div{color:#7d7d7d; font-family: Arial; font-size: 10px; font-weight: normal;
+ text-decoration: none; line-height: 6px;}
+ 
+ #stepMenu_Holder li a span div.current{color:#FF0000; font-family: Arial; font-size: 10px; font-weight: normal;
+ text-decoration: none; line-height:6px;}
+
+
+.contentwrap_step3 {background-color:#ffffff; height: auto; min-height: 150px; padding: 0 4px; width: 531px;}
+
+ 
+.carimageDiv{   height: 398px;
+    padding-bottom: 6px;
+    padding-left: 4px;
+    padding-top: 6px;
+    width: 524px;}
+
+.carthumbImgdiv{   height: auto;
+    min-height: 150px;
+    padding-left: 4px;
+    width: 524px;}
+	
+	.carthumbHolder{width: 511px; height:auto; margin-left: 7px; padding-top: 10px;}
+	
+	.carthumbDiv{ float:left; height:87px; margin-right:3px; width:114px;}
+	
+	.preArrow,.nxtArrow{float:left; height:87px; margin-right:3px;  margin-top: 18px; width:18px;}
+	
+	/*step 1 css END here*/
+		
+	/*step 2 css start here*/
+	
+	.formdatawrap { background-color: #fff; height: auto; min-height: 150px; padding: 6px 4px;
+    width: 531px;}
+	
+	.greyBgBox_Bottom_large{background-image: url("images/greyBottomBg531.png"); background-repeat: no-repeat; height:6px;}
+	
+	
+	
+.buttonWrapper {display: inline-block; width: 100%; height: 26px;}
+
+.buttonWrapper .buttonLeft{background: url(images/buttonBgLeft.gif) no-repeat scroll left top transparent; display: inline-block; height: 26px; margin-right: 8px; float: left;
+width:auto;}
+
+.buttonWrapper .buttonLeft label {padding: 3px 17px 0;}
+	
+	
+.buttonWrapper span.buttonLeft label {
+	background: url(images/buttonBgRight.gif) no-repeat scroll right top transparent;
+	cursor: pointer;
+	display: inline-block;
+	height: 26px;
+	margin-right: -2px;}
+
+.buttonWrapper span.buttonLeft label a.btntext:link,.btntext:visited,.btntext:hover{
+color:#ffffff;font-family: Arial; font-size: 11px; font-weight: bold; line-height:19px;
+text-align: center; text-decoration: none;}
+	
+	
+/*step2 css here */
+
+.formstep2_wrap{ float:left; padding-top: 15px; padding-bottom: 12px; width:531px;}
+
+.formstep2_wrap h2 {color: #F73832; font-family: Arial; font-size: 14px;font-weight: bold;
+    padding-bottom: 10px; padding-left: 10px; padding-top: 0;}
+
+
+.formstep2_wrap .left{float:left; margin-left:11px;}
+
+.formstep2_wrap .left label{float:left; color:#444444; font-family: Arial; font-size: 12px; font-weight: normal; width:91px; line-height: 19px; margin-bottom: 7px;}
+
+.formstep2_wrap .left input.boxinput{ border:solid 1px #c0c0c0; background-color:#FFFFFF; width:145px; height:17px; color:#444444; font-family: Arial; font-size: 12px; font-weight: normal;  margin-bottom: 7px;}
+
+
+.formstep2_wrap .left select.boxselect{ background-color: #FFFFFF; border: 1px solid #c0c0c0; color:#444444;	font-family: Arial; font-size: 12px; font-weight: normal;
+height: 19px; width: 147px; margin-bottom: 7px;}
+
+
+
+.formstep2_wrap .right{float:left; margin-right:0px;}
+
+.formstep2_wrap .right label{float:left; color:#444444; font-family: Arial; font-size: 12px; font-weight: normal; width:117px;  line-height: 19px;  margin-bottom: 7px;}
+
+.formstep2_wrap .right input.boxinput{ border:solid 1px #c0c0c0; background-color:#FFFFFF; width:145px; height:17px; color:#444444; font-family: Arial; font-size: 12px; font-weight: normal;  margin-bottom: 7px;}
+
+
+.formstep2_wrap .right select.boxselect{ background-color: #FFFFFF; border: 1px solid #c0c0c0; color:#444444;	font-family: Arial; font-size: 12px; font-weight: normal;
+height: 19px; width: 147px; margin-bottom: 7px;}
+
+.formstep2_wrap p.adres{ float:left; color:#444444; font-family: Arial; font-size: 12px; font-weight: normal; line-height:17px; padding-left: 11px; width:222px;}
+
+.formstep2_wrap p.adres a{ color:#444444; font-family: Arial; font-size: 12px; font-weight: normal; line-height:17px;}
+
+.formstep2_wrap p.note{ float:left; color:#444444; font-family: Arial; font-size: 12px; font-weight: bold; line-height:17px; padding-left: 11px; width:285px;}
+
+.features{ float:left;}
+
+.formstep2_wrap .features h3{color:#444444; font-family: Arial; font-size: 12px; font-weight: bold; font-style:italic; margin-bottom: 9px; line-height:17px;}
+
+.formstep2_wrap .features table tr td {color:#444444; font-family: Arial; font-size: 12px; font-weight: normal; padding-bottom: 8px;}
+
+
+.checkbox{ height:13px; width:13px;}
+
+.formCol1_new {
+    color: #2B2E33; float: left;
+    font-family: Arial;
+    font-size: 12px;
+    font-weight: normal;
+    padding-bottom: 7px;
+    text-decoration: none;
+    width:91px;
+}
+
+.formCol2_new {
+    float: left;
+    padding-bottom: 7px;
+    width:414px;
+}
+
+/*step 2 css END here*/
+
+/*MY profile and MY advertisement css START here*/
+
+.mypro_infowrap{ height:auto; min-height:185px; margin-left: -4px;  margin-bottom: 9px; width:530px;}
+
+.topInfoDiv{background-image: url("images/myproinfo_bg.gif"); background-repeat: no-repeat; height:37px; width:530px;}
+
+.topInfoDiv div{ float:left; line-height: 32px;}
+
+.midInfoDiv{ height:auto; width:530px;}
+
+.whitetext_pro{color: #ebebeb; font-family: Arial; font-size: 12px; font-weight:normal; text-decoration: none;}
+
+.selectsmall { background-color: #FFFFFF; border: 1px solid #C0C0C0; color: #444444;
+    font-family: Arial; font-size: 12px; font-weight: normal; height: 19px;  width: 106px;}
+	
+.mypro_infowrap .midInfoDiv .greyBgBox h2 {color: #ff0000; font-family: Arial; font-size: 12px; font-weight: bold; font-style:italic; padding-bottom: 10px;  padding-left: 10px;  padding-top: 8px;}
+
+.mypro_infowrap .midInfoDiv .greyBgBox .infoDataDiv{ width:530px; height: auto;    margin-bottom: 6px; min-height: 107px; overflow: hidden;}
+
+.mypro_infowrap .midInfoDiv .greyBgBox .infoDataDiv div{ float:left;}
+
+.mypro_infowrap .midInfoDiv .greyBgBox .infoDataDiv div.thumbImg_mypro{ margin-left:7px; margin-right:8px;}
+
+
+.mypro_infowrap .midInfoDiv .greyBgBox .infoDataDiv div table tr td{color: #252525; font-family: Arial; font-size: 12px; font-weight:normal; text-decoration: none;  padding-bottom: 5px;}
+
+    .myprofilewrap {
+    float: left;
+    padding-bottom: 12px;
+    padding-top: 15px;
+    width: 531px;
+}
+
+.myprofilewrap h2 {
+    color: #ff0000;
+    font-family: Arial;
+    font-size: 12px;
+    font-weight: bold;
+    padding-bottom: 14px;
+    padding-left: 10px;
+    padding-top: 0;
+}
+
+.myprofilewrap .leftcol{color: #2b2e33;
+    float: left;
+    font-family: Arial;
+    font-size: 12px;
+    font-weight: normal;
+    margin-bottom:8px;
+	padding-left:17px;
+    width: 125px;
+}
+
+
+.myprofilewrap .rightcol{ float:left; margin-bottom:8px; width:315px;}
+
+ .inputbox_long{background-color: #FFFFFF;
+    border: 1px solid #C0C0C0;
+    color: #444444;
+    font-family: Arial;
+    font-size: 12px;
+    font-weight: normal;
+    height: 17px;
+    width: 230px;
+}
+
+.myprofilewrap .rightcol select.boxselect {
+    background-color: #FFFFFF;
+    border: 1px solid #C0C0C0;
+    color: #444444;
+    font-family: Arial;
+    font-size: 12px;
+    font-weight: normal;
+    height: 19px;
+    width: 147px;
+}
+
+.myprofilewrap .rightcol table tr td{color: #2b2e33;  
+    font-family: Arial;
+    font-size: 12px;
+    font-weight: normal; padding-bottom: 8px;}
+
+/*MY profile and MY advertisement css END here*/
+	
+.dataHolderDiv p span.redBold {color: #FF0000; font-family: Arial; font-size: 12px; font-weight: bold; text-decoration: none;}
+
+.contentHolderDiv p.info {
+    color: #121212;
+    font-family: Arial;
+    font-size: 12px;
+    font-weight: normal;
+    height: auto;
+    margin-bottom:0px;
+    padding-top: 10px;
+    text-decoration: none;
+}
+.listRow{background-image: url("../images/listviewBg.gif"); background-repeat: repeat-x; background-color:#eeefef; float:left; height:auto; min-height:74px; border-bottom:solid 1px #cfcfcf; width:539px;}
+	
+	.listRow .thumbimgCol{ float:left; height:78px; padding-left:1px; width:107px;}
+	
+	.listRow .thumbimgCol div{padding-top: 3px;}
+	
+	
+	.listRow .infoCol{float:left; height:78px; width:320px; line-height:15px;}
+	
+	.listRow .infoCol h3 {color: #ff0000; font-family: Arial; font-size: 12px; font-weight: bold; /*padding-bottom:5px;*/ padding-top:9px;}
+
+	
+	
+	.listRow .priceCol{float:left; height:78px; border-left:solid 1px #cfcfcf; width:84px;}
+
+.listRow .infoCol table tr td{color: #363636; font-family: Arial; font-size: 12px; font-weight: normal; text-decoration:none;}
+
+.listRow .infoCol table tr td span{color: #363636; font-family: Arial; font-size: 12px; font-weight: bold; text-decoration:none;}
+
+.listRow .priceCol div { color: #FF0000; font-family: Arial; font-size: 12px; font-weight: bold; line-height: 75px; text-align: center;}
+
+.listRow .Close{float:left; height:78px; border-left:solid 1px #cfcfcf; padding-left: 1px; width:23px;}
+.listRow .Close div { color: #FF0000; font-family: Arial; font-size: 12px; font-weight: bold; padding-top: 28px; text-align: center;}
+.listRow .priceCol{float:left; height:78px; border-left:solid 1px #cfcfcf; width:84px;}
+
+.listRow .infoCol table tr td{color: #363636; font-family: Arial; font-size: 12px; font-weight: normal; text-decoration:none;}
+
+.listRow .infoCol table tr td span{color: #363636; font-family: Arial; font-size: 12px; font-weight: bold; text-decoration:none;}
+
+.listRow .priceCol div { color: #FF0000; font-family: Arial; font-size: 12px; font-weight: bold; line-height: 75px; text-align: center;}
+
+.listRow .infoCol{float:left; height:78px; width:320px; line-height:15px;}
+	
+	.listRow .infoCol h3 {color: #ff0000; font-family: Arial; font-size: 12px; font-weight: bold; /*padding-bottom:5px;*/ padding-top:9px;}
+	.listRow .infoCol table tr td{color: #363636; font-family: Arial; font-size: 12px; font-weight: normal; text-decoration:none;}
+
+.listRow .infoCol table tr td span{color: #363636; font-family: Arial; font-size: 12px; font-weight: bold; text-decoration:none;}
+
+.listRow .thumbimgCol{ float:left; height:78px; padding-left:1px; width:107px;}
+	
+	.listRow .thumbimgCol div{padding-top: 3px;}
+.paginationHolder {
+    background-color:#ffffff;
+    height: 50px;
+    margin: 0 8px 15px 0;
+    padding-top: 30px;
+    width: 539px;
+}
+	.paginationHolder .innerdiv{ float:right; padding-right:18px; width:500px;}
+.listview_wrap{height:auto; min-height:74px; border:solid 1px #cfcfcf; width:539px; overflow: hidden;} 
+
+.paginationDiv{float: left;height: 21px; width: 355px; /*width:370px;*/}
+		
+		.paginationDiv ul li {margin-right:-3px;}
+
+				.paginationDiv ul li {display:inline;}
+				
+				.paginationDiv ul li a{font-weight:bold;}
+			.paginationNo, .paginationNoActive{
+				background:url(images/pagination_BG.png) no-repeat;
+				color:#363636; 
+				font-family: Arial;
+				font-size:11px;
+				font-weight:bold;
+				height:21px;
+				 padding: 4px 12px 5px 8px;
+				text-decoration:none;
+				width:22px;
+			}
+			.paginationNo, .paginationNoActive a:link a, a:link, a:visited, a:hover{color:#363636; font-size:11px; font-weight:bold;}
+.land_redtextplain{
+	color:#121212;
+    font-family: Arial;
+    font-size: 13px;
+    font-weight: bold;
+    line-height:17px;
+    text-decoration: none;}
+
+.land_redtext:link, .land_redtext:visited,.land_redtext:hover{
+	color:#646464;
+    font-family: Arial;
+    font-size: 11px;
+    font-weight: bold;
+    line-height:17px;
+    text-decoration: none;
+     padding-right:2px;
+}
