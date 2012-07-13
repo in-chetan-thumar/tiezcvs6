@@ -2,9 +2,10 @@
 	exec('/www/cronjobs/tiezcvs6');
 	echo exec('git pull');
 	
-	echo '<br><Br> -l: '.exec('git branch -l');
-	echo '<br><Br> -a: '. $allBranch = exec('git branch -a');
+	//	echo '<br><Br> -l: '.exec('git branch -l');
+	echo '<br><Br> -a: '. $allBranch = shell_exec('git branch -a');
 	echo '<br> array ';
+	$allBranch = explode(' ', $allBranch);
 	print_R($allBranch); 
 	
 	$cBranch = exec('git branch | grep "*" | sed "s/* //"');
