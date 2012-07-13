@@ -57,7 +57,7 @@ if($action == 'commitedFileList'){
 if($action == 'checkoutBranch'){
 	$sBranch = trim($_POST['branchName']);
 	echo 'git checkout '.$sBranch;
-	$result = shell_exec('git checkout '.$sBranch);
+	$result = shell_exec('git checkout branch3');
 	$result1 = exec('git checkout '.$sBranch);
 	echo $result; 
 	echo $result1; 
