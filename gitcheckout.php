@@ -39,6 +39,7 @@ if($action == ''){
 print_r($_POST);
 if($action == 'commitedFileList'){
 	echo 'git diff --name-status '.$cBranch.'  '.$_POST['checkoutBranch'].'<BR><BR>';
-	echo '<br><br> New branch change is: <bR><br>' . shell_exec('git diff --name-status '.$cBranch.'  '.$_POST['checkoutBranch']); 
+	$fileList = shell_exec('git diff --name-status '.$cBranch.'  '.$_POST['checkoutBranch']); 
+	echo '<br><br> New branch change is: <bR><br>' . $fileList;
 }
 ?>
