@@ -1,17 +1,67 @@
 <?php
-	exec('/www/cronjobs/tiezcvs6');
-	echo exec('git pull');
+$action = '';
+if($_POST['action'] != ''){
+	$action = $_POST['action'];
+} 
+$cBranch = shell_exec('git branch | grep "*" | sed "s/* //"');
+$cBranch = trim($cBranch);
+
+if($action == ''){
+	echo shell_exec('git pull');
 	
-	echo '<br><Br> -l: '.exec('git branch -l');
-	echo '<br><Br> -a: '. $allBranch = exec('git branch -a');
-	echo '<br> array ';
-	print_R($allBranch); 
+	$allBranch = shell_exec('git branch -a');
+	$allBranch = explode(' ', $allBranch);
+	foreach($allBranch as $key => $value){
+		if($value == ''){
+			unset($allBranch[$key]);
+		}elseif($value == '->'){
+			unset($allBranch[$key]);
+		}else{
+			$allBranch[$key] = str_replace('remotes/origin/', '', $value);
+			$allBranch[$key] = str_replace('*', '', $allBranch[$key]);
+			$allBranch[$key] = str_replace('origin/', '', $allBranch[$key]);
+		}
+	}
+	$allBranch = array_unique($allBranch);
+	sort($allBranch);
 	
-	$cBranch = exec('git branch | grep "*" | sed "s/* //"');
-	echo '<br>Current branch name is: ' . $cBranch;
-	
-	$lBranch = exec('git branch --contains');
-	echo '<br><br>Latest branch name is: ' . $lBranch;
-	
-	//echo '<br><br> New branch change is: <bR><br>' . exec('git diff --name-status branch1..branch2'); 
+	echo '<br>Current branch name is: <b>' . $cBranch . '</b>';
+	echo '<form name="checkout" action="" method="post">';
+	echo '<input type="hidden" name="action" value="commitedFileList">';
+	echo '<br><br>Checkout on branch: ';
+		echo '<select name="checkoutBranch">';
+			foreach($allBranch as $key => $value){
+				echo '<option value="'.trim($value).'">'.trim($value).'</option>';
+			}
+		echo '</select>';
+		echo '<input type="submit" name="submit" value="Checkout Branch">';
+	echo '</form>';
+}
+print_r($_POST);
+if($action == 'commitedFileList'){
+	$sBranch = trim($_POST['checkoutBranch']);
+	$fileList = shell_exec('git diff --name-status '.$cBranch.'..'.$sBranch); 
+	$fileList = explode(' ', $fileList);
+	echo '<br><br> New branch changes are: <bR><br>';
+	echo 'Tryp'.  "\t \t" . 'File name';
+	foreach($fileList as $key => $value){
+		echo '<br>'.$value;
+	}
+	echo '<br><br>';
+	echo '<form name="checkoutBranch" action="" method="post">';
+		echo '<input type="hidden" name="action" value="checkoutBranch">';
+		echo '<input type="hidden" name="branchName" value="'.$sBranch.'">';
+		echo '<input type="submit" name="submit" value="Checkout Branch">';
+	echo '</form>';
+}
+if($action == 'checkoutBranch'){
+	$sBranch = trim($_POST['branchName']);
+	echo 'git checkout '.$sBranch;
+	$result = shell_exec('git checkout branch3');
+	echo "<br> cd /www/cronjobs/tiezcvs6; git fetch origin; git reset —hard; git checkout branch3; git pull origin branch3;";
+	echo shell_exec("cd /www/cronjobs/tiezcvs6; git fetch origin; git reset —hard; git checkout branch3; git pull origin branch3;"); 
+	$result1 = exec('git checkout '.$sBranch);
+	echo $result; 
+	echo $result1; 
+}
 ?>
