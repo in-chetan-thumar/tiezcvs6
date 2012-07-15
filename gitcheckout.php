@@ -59,8 +59,8 @@ if($action == 'checkoutBranch'){
 	echo 'git checkout '.$sBranch;
 	//$result = shell_exec('git checkout '.$sBranch);
 	echo "<pre>$result</pre>";
-	echo "<br> cd /www/cronjobs/tiezcvs6/; git fetch origin; git reset —hard; git checkout ".$sBranch."; git pull origin ".$sBranch.";";
-	$result1 = shell_exec("cd /www/cronjobs/tiezcvs6/; git fetch origin; git reset —hard; git checkout ".$sBranch."; git pull origin ".$sBranch.";"); 
+	echo "<br> cd /www/cronjobs/tiezcvs6/; git fetch origin; git checkout ".$sBranch."; git pull origin ".$sBranch.";";
+	$result1 = shell_exec("cd /www/cronjobs/tiezcvs6/; git fetch origin; git checkout ".$sBranch."; git pull origin ".$sBranch.";"); 
 	echo "<pre>$result1</pre>";
 	$result1 = exec('git checkout '.$sBranch);
 }
